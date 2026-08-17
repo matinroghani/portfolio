@@ -8,28 +8,21 @@ export default function Hero_Main() {
         flex
         w-full
         flex-col
-        items-center
+        items-stretch
         gap-12
 
         sm:gap-14
 
-        lg:min-h-[550px]
         lg:flex-row
         lg:items-stretch
         lg:gap-12
       "
     >
-      <Here_Content />
+      <div className="flex w-full lg:w-1/2">
+        <Here_Content />
+      </div>
 
-      <div
-        className="
-          w-full
-          max-w-2xl
-
-          lg:w-1/2
-          lg:max-w-none
-        "
-      >
+      <div className="flex w-full lg:w-1/2">
         <Hero_Image />
       </div>
     </div>

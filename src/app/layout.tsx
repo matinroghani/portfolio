@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={` ${geist.className} min-h-screen bg-[var(--color-background)] text-[var(--color-text-primary)] antialiased`}
       >
-        <div className="mx-auto w-full px-6 sm:px-8 lg:px-12 xl:px-16">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-10 xl:px-12">
           <Header />
           <main>{children}</main>
         </div>

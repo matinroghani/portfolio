@@ -2,10 +2,15 @@ import { ReactNode } from "react";
 
 type PrimraryProps = {
   title: string;
-  icon ?: ReactNode;
+  pastIcon?: ReactNode;
+  preIcon?: ReactNode;
 };
 
-export default function Cta_Primrary({ title, icon }: PrimraryProps) {
+export default function Cta_Primrary({
+  title,
+  pastIcon,
+  preIcon,
+}: PrimraryProps) {
   return (
     <button
       type="button"
@@ -14,34 +19,34 @@ export default function Cta_Primrary({ title, icon }: PrimraryProps) {
         inline-flex
         items-center
         justify-center
-        gap-4
-        rounded-[10px]
+        gap-3
+        rounded-[12px]
         border
-        border-purple-400/25
-        bg-gradient-to-r
-        from-[#5b3df5]
-        via-[#7047ee]
-        to-[#a45bea]
-        px-7
-        py-4
+        border-purple-500/20
+        bg-purple-900/10
+        backdrop-blur-sm
+        px-6
+        py-3.5
         text-base
         font-medium
-        leading-none
-        text-white
-        shadow-[0_0_25px_rgba(124,58,237,0.32)]
+        text-purple-300
         transition-all
         duration-200
-        hover:brightness-110
-        hover:shadow-[0_0_32px_rgba(124,58,237,0.42)]
+        hover:bg-purple-900/20
+        hover:text-purple-200
+        hover:border-purple-500/40
         focus-visible:outline-none
         focus-visible:ring-2
-        focus-visible:ring-[var(--color-primary)]
+        focus-visible:ring-purple-500/50
       "
     >
+      <span className="flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
+        {preIcon}
+      </span>
       <span>{title}</span>
 
       <span className="flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
-        {icon}
+        {pastIcon}
       </span>
     </button>
   );

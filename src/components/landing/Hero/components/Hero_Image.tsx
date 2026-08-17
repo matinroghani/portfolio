@@ -2,17 +2,7 @@ import Image from "next/image";
 
 export default function Hero_Image() {
   return (
-    <div
-      className="
-        relative
-        w-full
-        pb-14
-        sm:pb-16
-        lg:h-full
-        lg:min-h-0
-        lg:pb-0
-      "
-    >
+    <div className="grid w-full grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-[1.6fr_1fr] lg:items-stretch">
       {/* Main Image */}
       <div
         className="
@@ -24,13 +14,7 @@ export default function Hero_Image() {
           border
           border-[var(--color-glass-border)]
           bg-[var(--color-glass)]
-
           sm:aspect-[5/4]
-
-          md:aspect-[16/11]
-
-          lg:h-full
-          lg:min-h-[500px]
           lg:aspect-auto
         "
       >
@@ -42,25 +26,21 @@ export default function Hero_Image() {
           sizes="
             (max-width: 640px) 100vw,
             (max-width: 1024px) 90vw,
-            50vw
+            60vw
           "
           className="
-            scale-[1.08]
             object-contain
             object-bottom
+            scale-[1.08]
             transition-transform
             duration-500
-
             sm:scale-[1.1]
-
             md:scale-[1.12]
-
-            lg:scale-[1.18]
-            lg:object-right-bottom
+            lg:scale-[1.16]
+            lg:object-center
           "
         />
 
-        {/* Subtle dark fade */}
         <div
           className="
             pointer-events-none
@@ -74,58 +54,120 @@ export default function Hero_Image() {
         />
       </div>
 
-      {/* Overlay Image */}
+      {/* Developer Code Card */}
       <div
         className="
-        hidden
-        lg:inline
-          absolute
-          bottom-0
-          left-1/2
-          z-20
-          w-[72%]
-          -translate-x-1/2
+          flex
+          w-full
+          flex-col
           overflow-hidden
-          rounded-lg
+          rounded-xl
           border
           border-[var(--color-glass-border)]
           bg-[var(--color-glass)]
-          p-1
-          shadow-[0_20px_50px_rgba(0,0,0,0.35)]
-          backdrop-blur-xl
-
-          sm:w-[60%]
-
-          md:left-6
-          md:w-[48%]
-          md:translate-x-0
-
-          lg:bottom-[-50px]
-          lg:left-[-55px]
-          lg:w-[58%]
+          shadow-[0_20px_50px_rgba(0,0,0,0.2)]
         "
       >
+        {/* Editor Header */}
         <div
           className="
-            relative
-            aspect-[1.45/1]
-            w-full
-            overflow-hidden
-            rounded-md
+            flex
+            items-center
+            gap-2
+            border-b
+            border-[var(--color-border)]
+            px-4
+            py-3
           "
         >
-          <Image
-            src="/images/about/about.png"
-            alt="About Matin Roghani"
-            fill
-            sizes="
-              (max-width: 640px) 72vw,
-              (max-width: 768px) 60vw,
-              (max-width: 1024px) 48vw,
-              30vw
+          <span className="size-2.5 rounded-full bg-red-400/70" />
+          <span className="size-2.5 rounded-full bg-yellow-400/70" />
+          <span className="size-2.5 rounded-full bg-green-400/70" />
+
+          <span
+            className="
+              ml-2
+              text-xs
+              text-[var(--color-text-muted)]
             "
-            className="object-cover"
-          />
+          >
+            developer.ts
+          </span>
+        </div>
+
+        {/* Code */}
+        <div className="flex-1 overflow-auto p-5 sm:p-6">
+          <pre
+            className="
+              font-mono
+              text-[11px]
+              leading-6
+              text-[var(--color-text-primary)]
+              sm:text-xs
+            "
+          >
+            <code>
+              <span className="text-[var(--color-primary-light)]">const</span>{" "}
+              <span className="text-[var(--color-secondary-light)]">
+                developer
+              </span>{" "}
+              = {"{"}
+              {"\n"}
+              {"  "}
+              <span className="text-[var(--color-primary-lighter)]">
+                name
+              </span>: <span className="text-emerald-300">{"Matin Roghani"}</span>,{"\n"}
+              {"  "}
+              <span className="text-[var(--color-primary-lighter)]">
+                role
+              </span>:{" "}
+              <span className="text-emerald-300">{"Frontend Developer"}</span>,
+              {"\n\n"}
+              {"  "}
+              <span className="text-[var(--color-primary-lighter)]">
+                philosophy
+              </span>
+              : {"{"}
+              {"\n"}
+              {"    "}
+              <span className="text-[var(--color-primary-lighter)]">focus</span>
+              : <span className="text-emerald-300">{"Clean Code"}</span>,{"\n"}
+              {"    "}
+              <span className="text-[var(--color-primary-lighter)]">
+                mindset
+              </span>
+              :{" "}
+              <span className="text-emerald-300">{"Build. Learn. Improve."}</span>
+              ,{"\n"}
+              {"  "}
+              {"},"}
+              {"\n\n"}
+              {"  "}
+              <span className="text-[var(--color-primary-lighter)]">stack</span>
+              : [{"\n"}
+              {"    "}
+              <span className="text-emerald-300">{"React"}</span>,{"\n"}
+              {"    "}
+              <span className="text-emerald-300">{"Next.js"}</span>,{"\n"}
+              {"    "}
+              <span className="text-emerald-300">{"TypeScript"}</span>,{"\n"}
+              {"  "}] ,{"\n\n"}
+              {"  "}
+              <span className="text-[var(--color-primary-lighter)]">
+                currentlyBuilding
+              </span>
+              :{" "}
+              <span className="text-emerald-300">
+                {"Digital experiences that matter."}
+              </span>
+              ,{"\n"}
+              {"};"}
+              {"\n\n"}
+              <span className="text-[var(--color-text-muted)]">
+                 {"// Always Learning. Always building."}
+              </span>
+            </code>
+          </pre>
         </div>
       </div>
     </div>

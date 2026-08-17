@@ -9,13 +9,14 @@ export default function Here_Content() {
     <div
       className="
         flex
+        h-full
         w-full
         max-w-2xl
         flex-col
         items-center
+        justify-between
         gap-7
 
-        lg:w-1/2
         lg:max-w-none
         lg:items-start
       "
@@ -70,7 +71,6 @@ export default function Here_Content() {
         </p>
       </div>
 
-      {/* CTA */}
       <div
         className="
           flex
@@ -88,7 +88,7 @@ export default function Here_Content() {
       >
         <Cta_Primrary
           title="View My Work"
-          icon={<ArrowRight size={20} strokeWidth={1.8} />}
+          pastIcon={<ArrowRight size={20} strokeWidth={1.8} />}
         />
 
         <Cta_Secondery
@@ -97,7 +97,6 @@ export default function Here_Content() {
         />
       </div>
 
-      {/* Social */}
       <div
         className="
           flex

@@ -1,4 +1,7 @@
+import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
+import About from "@/components/landing/About/About";
 import Hero_Main from "@/components/landing/Hero/Hero_Main";
+import PersonalInfos from "@/components/landing/PersonalInfos/PersonalInfos";
 
 export default function Home() {
   return (
@@ -10,11 +13,18 @@ export default function Home() {
         border-[var(--color-glass-border)]
         bg-[var(--color-glass-light)]
         backdrop-blur-xl
-        p-10
-        lg:p-20
+        p-5
+        flex
+        flex-col
+        gap-10
+        sm:p-8
+        lg:p-12
+        xl:p-16
       "
     >
       <Hero_Main />
+      <PersonalInfos />
+      <About />
     </div>
   );
 }
