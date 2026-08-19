@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "role": "Frontend Developer Intern",
+    "company": "Rtl-Theme",
+    "companyImage": "/images/companies/rtl-theme.png",
+    "location": "Shahr-e-kord, Iran",
+    "startDate": "Dec 2023",
+    "endDate": "Mar 2024",
+    "description": "Frontend development internship with a focus on WordPress websites and modern frontend practices."
+  },
+  {
+    "id": 2,
+    "role": "Frontend Developer",
+    "company": "Rtl-Theme",
+    "companyImage": "/images/companies/rtl-theme.png",
+    "location": "Shahr-e-kord, Iran",
+    "startDate": "Mar 2024",
+    "endDate": "Aug 2024",
+    "description": "Developed and maintained frontend interfaces and WordPress-based websites."
+  },
+  {
+    "id": 3,
+    "role": "WordPress Technical Support",
+    "company": "Rtl-Theme",
+    "companyImage": "/images/companies/rtl-theme.png",
+    "location": "Shahr-e-kord, Iran",
+    "startDate": "Mar 2024",
+    "endDate": "Aug 2024",
+    "description": "Provided technical support, troubleshooting, maintenance, and assistance for WordPress websites."
+  },
+  {
+    "id": 4,
+    "role": "Website Developer & Administrator",
+    "company": "Atroderm & Khoroushan Lian",
+    "companyImage": "/images/companies/atroderm.png",
+    "location": "Iran",
+    "startDate": "Nov 2024",
+    "endDate": "Jul 2025",
+    "description": "Developed, maintained, and administered websites for Atroderm and Khoroushan Lian."
+  },
+  {
+    "id": 5,
+    "role": "Frontend Developer",
+    "company": "Arya Code",
+    "companyImage": "/images/companies/arya-code.png",
+    "location": "Iran",
+    "startDate": "Sep 2025",
+    "endDate": "Jan 2026",
+    "description": "Worked as a frontend developer, building and maintaining web interfaces using modern frontend technologies."
+  },
+  {
+    "id": 6,
+    "role": "React / TypeScript / Next.js Intern",
+    "company": "Freelance",
+    "companyImage": "/images/companies/freelance.png",
+    "location": "Iran",
+    "startDate": "Mar 2026",
+    "endDate": "May 2026",
+    "description": "Focused on deepening practical knowledge of React, TypeScript, and Next.js through hands-on development and real-world projects."
+  },
+  {
+    "id": 7,
+    "role": "Frontend Developer",
+    "company": "Hamyar & Freelance",
+    "companyImage": "/images/companies/hamyar.png",
+    "location": "Shahr-e-kord, Iran",
+    "startDate": "May 2026",
+    "endDate": "Present",
+    "description": "Working with Hamyar while taking on freelance frontend development projects and building modern web applications."
+  }
+]

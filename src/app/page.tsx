@@ -1,5 +1,7 @@
 import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
+import ExperienceTimeline from "@/components/landing/Career/components/Timeline";
 import About from "@/components/landing/About/About";
+import Career from "@/components/landing/Career/Career";
 import Hero_Main from "@/components/landing/Hero/Hero_Main";
 import PersonalInfos from "@/components/landing/PersonalInfos/PersonalInfos";
 import Projects from "@/components/landing/Projects/Projects";
@@ -26,7 +28,8 @@ export default function Home() {
       <Hero_Main />
       <PersonalInfos />
       <About />
-      <Projects/>
+      <Projects />
+      <Career />
     </div>
   );
 }
