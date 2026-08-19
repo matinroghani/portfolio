@@ -11,7 +11,7 @@ export default function SocialMedia() {
           <Link
             key={item.id}
             href={item.href}
-            aria-label={item.title}
+            aria-label={item.label}
             target="_blank"
             rel="noopener noreferrer"
             className="
