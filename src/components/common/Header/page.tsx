@@ -2,7 +2,7 @@ import { Moon } from "lucide-react";
 import Header_Name from "./components/Header_Name";
 import Header_Navigation from "./components/Header_Navigation";
 import Header_MobileMenu from "./components/Header_MobileMenu";
-import Downloader from "@/components/common/Downloader/Downloader";
+import Downloader from "../Downloader/Downloader";
 
 export default function Header() {
   return (
