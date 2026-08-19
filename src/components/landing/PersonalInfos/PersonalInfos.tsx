@@ -1,5 +1,6 @@
 import { personalInfos } from "@/data/personalInfos";
 import PersonalInfo_Card from "./components/PersonalInfo_Card/PersonalInfo_Card";
+import { PersonalInfoType } from "@/types/personalInfoType";
 
 export default function PersonalInfos() {
   return (
@@ -19,7 +20,7 @@ export default function PersonalInfos() {
         lg:flex-row
       "
     >
-      {personalInfos.map((info, index) => {
+      {personalInfos.map((info: PersonalInfoType, index: number) => {
         const Icon = info.icon;
 
         return (

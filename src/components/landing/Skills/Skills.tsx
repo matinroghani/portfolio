@@ -3,6 +3,7 @@ import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
 import { technologies } from "@/data/skills";
 import { ArrowRight } from "lucide-react";
 import Skills_Card from "./components/Skills_Card";
+import { TechnologyType } from "@/types/skills";
 
 export default function Skills() {
   return (
@@ -46,7 +47,7 @@ export default function Skills() {
           lg:grid-cols-6
         "
       >
-        {technologies.slice(0, 12).map((tech) => (
+        {technologies.slice(0, 12).map((tech: TechnologyType) => (
           <Skills_Card
             key={tech.id}
             name={tech.name}

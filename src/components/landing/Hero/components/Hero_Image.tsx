@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Main_Code from "./Code/Main_Code";
+import Editor_Header from "./Code/Editor_Header";
 
 export default function Hero_Image() {
   return (
@@ -69,106 +71,10 @@ export default function Hero_Image() {
         "
       >
         {/* Editor Header */}
-        <div
-          className="
-            flex
-            items-center
-            gap-2
-            border-b
-            border-[var(--color-border)]
-            px-4
-            py-3
-          "
-        >
-          <span className="size-2.5 rounded-full bg-red-400/70" />
-          <span className="size-2.5 rounded-full bg-yellow-400/70" />
-          <span className="size-2.5 rounded-full bg-green-400/70" />
-
-          <span
-            className="
-              ml-2
-              text-xs
-              text-[var(--color-text-muted)]
-            "
-          >
-            developer.ts
-          </span>
-        </div>
+        <Editor_Header />
 
         {/* Code */}
-        <div className="flex-1 overflow-auto p-5 sm:p-6">
-          <pre
-            className="
-              font-mono
-              text-[11px]
-              leading-6
-              text-[var(--color-text-primary)]
-              sm:text-xs
-            "
-          >
-            <code>
-              <span className="text-[var(--color-primary-light)]">const</span>{" "}
-              <span className="text-[var(--color-secondary-light)]">
-                developer
-              </span>{" "}
-              = {"{"}
-              {"\n"}
-              {"  "}
-              <span className="text-[var(--color-primary-lighter)]">
-                name
-              </span>: <span className="text-emerald-300">{"Matin Roghani"}</span>,{"\n"}
-              {"  "}
-              <span className="text-[var(--color-primary-lighter)]">
-                role
-              </span>:{" "}
-              <span className="text-emerald-300">{"Frontend Developer"}</span>,
-              {"\n\n"}
-              {"  "}
-              <span className="text-[var(--color-primary-lighter)]">
-                philosophy
-              </span>
-              : {"{"}
-              {"\n"}
-              {"    "}
-              <span className="text-[var(--color-primary-lighter)]">focus</span>
-              : <span className="text-emerald-300">{"Clean Code"}</span>,{"\n"}
-              {"    "}
-              <span className="text-[var(--color-primary-lighter)]">
-                mindset
-              </span>
-              :{" "}
-              <span className="text-emerald-300">{"Build. Learn. Improve."}</span>
-              ,{"\n"}
-              {"  "}
-              {"},"}
-              {"\n\n"}
-              {"  "}
-              <span className="text-[var(--color-primary-lighter)]">stack</span>
-              : [{"\n"}
-              {"    "}
-              <span className="text-emerald-300">{"React"}</span>,{"\n"}
-              {"    "}
-              <span className="text-emerald-300">{"Next.js"}</span>,{"\n"}
-              {"    "}
-              <span className="text-emerald-300">{"TypeScript"}</span>,{"\n"}
-              {"  "}] ,{"\n\n"}
-              {"  "}
-              <span className="text-[var(--color-primary-lighter)]">
-                currentlyBuilding
-              </span>
-              :{" "}
-              <span className="text-emerald-300">
-                {"Digital experiences that matter."}
-              </span>
-              ,{"\n"}
-              {"};"}
-              {"\n\n"}
-              <span className="text-[var(--color-text-muted)]">
-                 {"// Always Learning. Always building."}
-              </span>
-            </code>
-          </pre>
-        </div>
+        <Main_Code />
       </div>
     </div>
   );

@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1277845587,
+    "name": "Project Management",
+    "image": "/images/projects/project-management.png",
+    "description": "A modern project management dashboard built with React, TypeScript, Material UI, React Hook Form, Zod, Redux Toolkit, and Kanban drag-and-drop workflow.",
+    "languages": ["React", "TypeScript", "Redux Toolkit"],
+    "githubUrl": "https://github.com/matinroghani/project-management",
+    "vercelUrl": null
+  },
+  {
+    "id": 1258214711,
+    "name": "Tracker",
+    "image": "/images/projects/Tracker.png",
+    "description": "A tracker with powerful features.",
+    "languages": ["React", "TypeScript", "Tailwind CSS"],
+    "githubUrl": "https://github.com/matinroghani/Tracker",
+    "vercelUrl": null
+  },
+  {
+    "id": 1259166442,
+    "name": "Inventory",
+    "image": "/images/projects/inventory.png",
+    "description": "A inventory management system",
+    "languages": ["React", "JavaScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/inventory",
+    "vercelUrl": null
+  },
+  {
+    "id": 1333007595,
+    "name": "Hamyar Front",
+    "image": "/images/projects/hamyar_front.png",
+    "description": "Hamyar Frontend",
+    "languages": ["React", "TypeScript", "Next.js"],
+    "githubUrl": "https://github.com/matinroghani/hamyar_front",
+    "vercelUrl": "https://hamyar-front-gray.vercel.app"
+  },
+  {
+    "id": 1259152936,
+    "name": "Iran Weather App",
+    "image": "/images/projects/iran-weather-app.png",
+    "description": "A weather forecasting app for Iranian cities",
+    "languages": ["React", "TypeScript", "API Integration"],
+    "githubUrl": "https://github.com/matinroghani/iran-weather-app",
+    "vercelUrl": null
+  },
+  {
+    "id": 1336874812,
+    "name": "Portfolio",
+    "image": "/images/projects/portfolio.png",
+    "description": "Personal portfolio website showcasing projects and skills",
+    "languages": ["Next.js", "React", "TypeScript"],
+    "githubUrl": "https://github.com/matinroghani/portfolio",
+    "vercelUrl": "https://portfolio-omega-olive-62.vercel.app"
+  },
+  {
+    "id": 1234920918,
+    "name": "Lorem Generator",
+    "image": "/images/projects/Lorem_Generator.gif",
+    "description": "lorem generation.",
+    "languages": ["React", "JavaScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/Lorem_Generator",
+    "vercelUrl": null
+  },
+  {
+    "id": 1259137327,
+    "name": "Quiz App",
+    "image": "/images/projects/quiz-app.png",
+    "description": "Interactive quiz app",
+    "languages": ["React", "TypeScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/quiz-app",
+    "vercelUrl": null
+  },
+  {
+    "id": 1260095424,
+    "name": "Article Management",
+    "image": "/images/projects/article-management.png",
+    "description": "A React-based article management system",
+    "languages": ["React", "JavaScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/article-management",
+    "vercelUrl": null
+  },
+  {
+    "id": 1259203224,
+    "name": "E-Commerce App",
+    "image": "/images/projects/E-Commerce-App.png",
+    "description": "A modern e-commerce web application",
+    "languages": ["React", "JavaScript", "Tailwind CSS"],
+    "githubUrl": "https://github.com/matinroghani/E-Commerce-App",
+    "vercelUrl": null
+  },
+  {
+    "id": 1260084945,
+    "name": "Slide Show",
+    "image": "/images/projects/slide-show.png",
+    "description": "A simple and interactive slideshow application",
+    "languages": ["React", "JavaScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/slide-show",
+    "vercelUrl": null
+  },
+  {
+    "id": 1260108205,
+    "name": "Social Feed",
+    "image": "/images/projects/social-feed.png",
+    "description": "React social feed application",
+    "languages": ["React", "JavaScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/social-feed",
+    "vercelUrl": null
+  },
+  {
+    "id": 1267274387,
+    "name": "User Form",
+    "image": "/images/projects/user-form.png",
+    "description": "A modern and minimal user form built with React and TypeScript",
+    "languages": ["React", "TypeScript", "CSS"],
+    "githubUrl": "https://github.com/matinroghani/user-form",
+    "vercelUrl": null
+  }
+]

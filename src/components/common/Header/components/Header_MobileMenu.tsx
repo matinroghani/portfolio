@@ -4,12 +4,8 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 
 import { navigationItems } from "@/data/navItems";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import Downloader from "../../downloader/Downloader";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Downloader from "../../Downloader/Downloader";
 
 export default function Header_MobileMenu() {
   return (
@@ -40,11 +36,7 @@ export default function Header_MobileMenu() {
           focus-visible:ring-offset-[var(--color-background)]
         "
       >
-        <Menu
-          size={20}
-          strokeWidth={1.8}
-          aria-hidden="true"
-        />
+        <Menu size={20} strokeWidth={1.8} aria-hidden="true" />
       </SheetTrigger>
 
       <SheetContent
@@ -56,10 +48,7 @@ export default function Header_MobileMenu() {
           text-[var(--color-text-primary)]
         "
       >
-        <nav
-          aria-label="Mobile navigation"
-          className="mt-8"
-        >
+        <nav aria-label="Mobile navigation" className="mt-8">
           <ul className="flex flex-col gap-1">
             {navigationItems.map((item) => (
               <li key={item.id}>
@@ -88,7 +77,8 @@ export default function Header_MobileMenu() {
 
           <div
             className="
-              m-auto
+            flex
+            justify-center
               border-t
               border-[var(--color-border)]
               pt-6
