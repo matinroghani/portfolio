@@ -5,6 +5,7 @@ import Career from "@/components/landing/Career/Career";
 import Hero_Main from "@/components/landing/Hero/Hero_Main";
 import PersonalInfos from "@/components/landing/PersonalInfos/PersonalInfos";
 import Projects from "@/components/landing/Projects/Projects";
+import CallToAction from "@/components/landing/CallToAction/CallToAction";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <About />
       <Projects />
       <Career />
+      <CallToAction/>
     </div>
   );
 }

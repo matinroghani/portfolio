@@ -1,5 +1,5 @@
+import InfoItem from "@/components/common/InfoItem/InfoItem";
 import { personalInfos } from "@/data/personalInfos";
-import PersonalInfo_Card from "./components/PersonalInfo_Card/PersonalInfo_Card";
 import { PersonalInfoType } from "@/types/personalInfoType";
 
 export default function PersonalInfos() {
@@ -26,10 +26,10 @@ export default function PersonalInfos() {
         return (
           <div
             key={info.id}
-            className="flex w-full flex-col items-center lg:flex-row"
+            className="flex w-full min-w-0 flex-col items-center lg:flex-row"
           >
             <div className="w-full min-w-0">
-              <PersonalInfo_Card
+              <InfoItem
                 icon={<Icon size={30} />}
                 label={info.label}
                 value={info.value}
@@ -40,13 +40,13 @@ export default function PersonalInfos() {
               <div
                 aria-hidden="true"
                 className="
+                  mt-2
                   h-px
                   w-full
-                  mt-2
-                  lg:mt-0
                   shrink-0
                   bg-[var(--color-border)]
                   lg:mx-4
+                  lg:mt-0
                   lg:h-10
                   lg:w-px
                 "

@@ -1,36 +1,33 @@
 import { FaGithub, FaLinkedin, FaTelegramPlane } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdPhone } from "react-icons/md";
 
-export type SocialMedia = {
-  id: string;
-  title: string;
-  href: string;
-  icon: React.ElementType;
-};
-
-export const socialMedias: SocialMedia[] = [
+export const socialMedias = [
   {
-    id: "linkedin",
-    title: "LinkedIn",
-    href: "https://linkedin.com/in/your-username",
-    icon: FaLinkedin,
+    id: 1,
+    icon: MdPhone,
+    label: "Phone",
+    value: "09338921593",
+    href: "tel:09338921593",
   },
   {
-    id: "github",
-    title: "GitHub",
-    href: "https://github.com/your-username",
+    id: 2,
     icon: FaGithub,
+    label: "GitHub",
+    value: "matinroghani",
+    href: "https://github.com/matinroghani",
   },
   {
-    id: "telegram",
-    title: "Telegram",
-    href: "https://t.me/your-username",
+    id: 3,
+    icon: FaLinkedin,
+    label: "LinkedIn",
+    value: "Matin Roghani",
+    href: "https://www.linkedin.com/in/matin-roghani-7ab7bb390",
+  },
+  {
+    id: 4,
     icon: FaTelegramPlane,
-  },
-  {
-    id: "email",
-    title: "Email",
-    href: "mailto:your@email.com",
-    icon: MdEmail,
+    label: "Telegram",
+    value: "@matinrog",
+    href: "https://t.me/matinrog",
   },
 ];
