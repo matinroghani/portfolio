@@ -2,6 +2,7 @@ import { Moon } from "lucide-react";
 import Header_Name from "./components/Header_Name";
 import Header_Navigation from "./components/Header_Navigation";
 import Header_MobileMenu from "./components/Header_MobileMenu";
+import Downloader from "../downloader/Downloader";
 
 export default function Header() {
   return (
@@ -27,6 +28,7 @@ export default function Header() {
 
       {/* Desktop Actions */}
       <div className="hidden items-center gap-3 lg:flex lg:justify-self-end">
+        <Downloader title="Download CV" />
 
         <button
           type="button"
