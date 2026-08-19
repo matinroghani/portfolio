@@ -5,7 +5,7 @@ import { Menu } from "lucide-react";
 
 import { navigationItems } from "@/data/navItems";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Downloader from "../../Downloader/Downloader";
+import Downloader from "@/components/common/Downloader/Downloader";
 
 export default function Header_MobileMenu() {
   return (
