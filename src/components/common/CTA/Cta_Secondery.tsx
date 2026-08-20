@@ -1,17 +1,20 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 type SeconderyProps = {
   title: string;
+  href: string;
   icon?: ReactNode;
 };
 
 export default function Cta_Secondery({
   title,
+  href,
   icon,
 }: SeconderyProps) {
   return (
-    <button
-      type="button"
+    <Link
+      href={href}
       className="
         group
         inline-flex
@@ -52,6 +55,6 @@ export default function Cta_Secondery({
       >
         {icon}
       </span>
-    </button>
+    </Link>
   );
 }

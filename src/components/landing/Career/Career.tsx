@@ -23,7 +23,7 @@ export default async function Career() {
   const experience = await getExperience();
 
   return (
-    <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+    <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3" id="experience">
       <Timeline data={experience} />
       <Journey />
       <PeopleSays />

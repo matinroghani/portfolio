@@ -29,8 +29,8 @@ export const personalInfos = [
   {
     id: 4,
     icon: Clock,
-    label: "Years Learning",
-    value: "1+ year",
+    label: "Years Experience",
+    value: "2+ year",
   },
   {
     id: 5,
@@ -42,6 +42,6 @@ export const personalInfos = [
     id: 6,
     icon: Code2,
     label: "Technologies",
-    value: "5+",
+    value: "15+",
   },
 ];

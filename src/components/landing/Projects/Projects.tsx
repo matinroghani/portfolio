@@ -2,10 +2,10 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import { GitHubRepoType } from "@/types/gitHubRepo";
-import Project_Card from "./components/Project_Card";
 import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
 import Cta_Primrary from "@/components/common/CTA/Cta_Primrary";
 import { ArrowRight } from "lucide-react";
+import Projects_Carousel from "./components/Projects_Carousel";
 
 async function getRepos(): Promise<GitHubRepoType[]> {
   const filePath = path.join(
@@ -34,30 +34,13 @@ export default async function Projects() {
         p-5
         sm:p-6
       "
+      id="projects"
     >
-      <div className="flex items-center justify-between">
+      {/* Header */}
         <SectionTitle title="Featured Projects" />
 
-        <Cta_Primrary
-          title="View All Projects"
-          pastIcon={<ArrowRight size={20} strokeWidth={1.8} />}
-        />
-      </div>
-
-      <div
-        className="
-          mt-5
-          grid
-          grid-cols-1
-          gap-5
-          sm:grid-cols-2
-          lg:grid-cols-4
-        "
-      >
-        {repos.slice(0, 4).map((project) => (
-          <Project_Card key={project.id} project={project} />
-        ))}
-      </div>
+      {/* Projects */}
+      <Projects_Carousel projects={repos} />
     </section>
   );
 }

@@ -2,7 +2,7 @@ import Badge from "@/components/common/Badge/Badge";
 import Cta_Primrary from "@/components/common/CTA/Cta_Primrary";
 import Cta_Secondery from "@/components/common/CTA/Cta_Secondery";
 import SocialMedia from "@/components/common/SocialMedai/SocialMedia";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 
 export default function Here_Content() {
   return (
@@ -89,11 +89,13 @@ export default function Here_Content() {
         <Cta_Primrary
           title="View My Work"
           pastIcon={<ArrowRight size={20} strokeWidth={1.8} />}
+          href="#projects"
         />
 
         <Cta_Secondery
           title="Get In Touch"
-          icon={<Mail size={20} strokeWidth={1.8} />}
+          icon={<Phone size={20} strokeWidth={1.8} />}
+          href="tel:09338921593"
         />
       </div>
 

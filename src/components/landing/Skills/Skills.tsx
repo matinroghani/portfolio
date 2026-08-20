@@ -1,59 +1,85 @@
-import Cta_Primrary from "@/components/common/CTA/Cta_Primrary";
+"use client";
+
 import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
 import { technologies } from "@/data/skills";
-import { ArrowRight } from "lucide-react";
 import Skills_Card from "./components/Skills_Card";
 import { TechnologyType } from "@/types/skills";
 
-export default function Skills() {
-  return (
-    <section
-      className="
-        w-full
-        rounded-xl
-        border
-        border-[var(--color-glass-border)]
-        bg-[var(--color-glass)]
-        p-5
-        sm:p-6
-        lg:w-2/3
-      "
-    >
-      {/* Header */}
-      <div
-        className="
-          flex
-          items-center
-          justify-between
-          gap-4
-        "
-      >
-        <SectionTitle title="Skills & Technologies" />
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
-        <Cta_Primrary
-          title="View All Skills"
-          pastIcon={<ArrowRight size={20} strokeWidth={1.8} />}
-        />
+import AutoScroll from "embla-carousel-auto-scroll";
+
+export default function Skills() {
+  const middle = Math.ceil(technologies.length / 2);
+
+  const firstRow = technologies.slice(0, middle);
+  const secondRow = technologies.slice(middle);
+
+  return (
+    <section className="w-full rounded-xl border border-[var(--color-glass-border)] bg-[var(--color-glass)] p-5 sm:p-6 lg:w-2/3" id="skills">
+      <div className="flex items-center justify-between gap-4">
+        <SectionTitle title="Skills & Technologies" />
       </div>
 
-      {/* Skills */}
-      <div
-        className="
-          mt-6
-          grid
-          grid-cols-2
-          gap-3
-          sm:grid-cols-3
-          lg:grid-cols-6
-        "
-      >
-        {technologies.slice(0, 12).map((tech: TechnologyType) => (
-          <Skills_Card
-            key={tech.id}
-            name={tech.name}
-            src={tech.image}
-          />
-        ))}
+      <div className="mt-6 flex flex-col gap-10">
+        {/* First Row */}
+        <Carousel
+          opts={{
+            loop: true,
+            align: "start",
+          }}
+          plugins={[
+            AutoScroll({
+              speed: 1,
+              stopOnInteraction: false,
+              stopOnMouseEnter: false,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-3">
+            {firstRow.map((tech: TechnologyType) => (
+              <CarouselItem
+                key={tech.id}
+                className="basis-1/2 pl-3 sm:basis-1/3 lg:basis-1/6"
+              >
+                <Skills_Card name={tech.name} src={tech.image} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+
+        {/* Second Row */}
+        <Carousel
+          opts={{
+            loop: true,
+            align: "start",
+          }}
+          plugins={[
+            AutoScroll({
+              speed: 1,
+              stopOnInteraction: false,
+              stopOnMouseEnter: false,
+              direction: "backward"
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-3">
+            {secondRow.map((tech: TechnologyType) => (
+              <CarouselItem
+                key={tech.id}
+                className="basis-1/2 pl-3 sm:basis-1/3 lg:basis-1/6"
+              >
+                <Skills_Card name={tech.name} src={tech.image} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </section>
   );

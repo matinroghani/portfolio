@@ -1,19 +1,22 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 type PrimraryProps = {
   title: string;
+  href: string;
   pastIcon?: ReactNode;
   preIcon?: ReactNode;
 };
 
 export default function Cta_Primrary({
   title,
+  href,
   pastIcon,
   preIcon,
 }: PrimraryProps) {
   return (
-    <button
-      type="button"
+    <Link
+      href={href}
       className="
         group
         inline-flex
@@ -43,11 +46,12 @@ export default function Cta_Primrary({
       <span className="flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
         {preIcon}
       </span>
+
       <span>{title}</span>
 
       <span className="flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
         {pastIcon}
       </span>
-    </button>
+    </Link>
   );
 }

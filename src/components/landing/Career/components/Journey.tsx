@@ -24,7 +24,7 @@ export default function Journey() {
 
           return (
             <div
-              key={item.year}
+              key={item.id}
               className="
                 relative
                 flex

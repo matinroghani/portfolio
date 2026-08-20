@@ -25,6 +25,7 @@ export default function CallToAction() {
         lg:justify-between
         lg:gap-10
       "
+      id="callToAction"
     >
       <div className="min-w-0 lg:max-w-2xl">
         <SectionTitle title="Let's Work Together!" />

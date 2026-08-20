@@ -1,37 +1,44 @@
 import {
-  FaCode,
   FaGraduationCap,
+  FaWordpress,
   FaBriefcase,
   FaReact,
 } from "react-icons/fa";
 
 export const journeyItems = [
   {
-    year: "2022",
-    title: "Started My Journey",
+    id: 1,
+    year: "2023",
+    title: "Started Computer Science",
     description:
-      "Started my academic journey in Computer Science and took my first steps into programming.",
+      "Started studying Computer Science at Shahrekord University and built my programming foundation.",
     icon: FaGraduationCap,
   },
+
   {
-    year: "2023",
-    title: "Found My Path",
-    description:
-      "Discovered web development, WordPress, and started building my first real-world projects.",
-    icon: FaCode,
-  },
-  {
+    id: 2,
     year: "2024",
-    title: "First Professional Experience",
+    title: "Started My Professional Journey",
     description:
-      "Started working professionally as a frontend developer and gained experience building real-world websites.",
+      "Started my professional career at Rtl-Theme as a Frontend Developer and WordPress specialist.",
+    icon: FaWordpress,
+  },
+
+  {
+    id: 3,
+    year: "2025",
+    title: "Expanded My Experience",
+    description:
+      "Worked on frontend development, website administration, and real-world projects with different teams.",
     icon: FaBriefcase,
   },
+
   {
+    id: 4,
     year: "2026",
-    title: "Going Deeper",
+    title: "React, TypeScript & Next.js",
     description:
-      "Deepened my skills in React, TypeScript, and Next.js while working on freelance and professional projects.",
+      "Focused on React, TypeScript, and Next.js through professional and freelance projects.",
     icon: FaReact,
   },
 ];

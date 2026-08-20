@@ -3,7 +3,7 @@ import About_Me from "./components/About_Me";
 
 export default function About() {
   return (
-    <div className="flex w-full flex-col gap-5 lg:flex-row">
+    <div className="flex w-full flex-col gap-5 lg:flex-row" >
       <About_Me />
       <Skills />
     </div>

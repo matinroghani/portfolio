@@ -15,6 +15,7 @@ export default function About_Me() {
         sm:p-6
         lg:w-1/3
       "
+      id="about"
     >
       <SectionTitle title="About Me" />
 
@@ -49,6 +50,7 @@ export default function About_Me() {
         title="More About Me"
         pastIcon={<ArrowRight size={20} strokeWidth={1.8} />}
         preIcon={<UserRound size={20} strokeWidth={1.8} />}
+        href="https://github.com/matinroghani"
         />
         </div>
     </div>
